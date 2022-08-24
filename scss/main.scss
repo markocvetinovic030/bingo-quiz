@@ -1,0 +1,86 @@
+@import "vars";
+@import "mixin";
+
+body {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+body.correct {
+    background-color: green;
+}
+
+body.wrong {
+    background-color: red;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    height: 600px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+    .hide{
+        display: none;
+    }
+
+    .logo{
+        width: 300px;
+        
+    }
+
+    #question {
+        margin-top: 80px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .btn-grid {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        row-gap: 100px;
+        justify-content: space-around;
+        margin: 80px 90px;
+
+        .btn {
+            width: 250px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+
+            &.correct {
+                background-color: green;
+            }
+
+            &.wrong {
+                background-color: red;
+            }
+        }
+    }
+
+    .controls {
+        display: flex;
+        justify-content: space-around;
+        margin: 0px auto;
+        width: 400px;
+
+
+        #start-btn {
+            background-color: orange;
+            width: 100px;
+            color: white;
+        }
+
+        #next-btn {
+            background-color: orange;
+            width: 100px;
+            color: white;
+        }
+
+    }
+}

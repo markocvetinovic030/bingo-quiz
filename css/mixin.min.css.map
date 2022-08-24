@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/mixin.scss",
+        "../scss/vars.scss"
+    ],
+    "names": [],
+    "file": "mixin.min.css"
+}
